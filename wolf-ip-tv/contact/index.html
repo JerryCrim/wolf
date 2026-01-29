@@ -1,83 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Wolf Family TV - Contact</title>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e6fff',
+                        'primary-dark': '#1b5fd1',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="/assets/js/header.js"></script>
 </head>
-<body>
 
-<header class="header">
-    <div class="logo">WOLF <span>Family TV</span></div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Channel List</a>
-        <a href="#">Subscribe</a>
-        <a href="#">Who to work</a>
-        <a href="#">Technology</a>
-        <a href="#" class="active">Contact</a>
-    </nav>
-</header>
+<body class="bg-[#0b0f16] text-white m-0 p-0 box-border font-sans">
 
-<section class="contact-section">
-    <div class="overlay"></div>
+    <!-- HEADER -->
+    <header class="fixed w-full top-0 z-50 backdrop-blur-md" style="background: rgba(0, 0, 0, 0.1);">
+        <nav class="flex justify-between items-center px-8 lg:px-16 py-6">
+            <div class="flex items-center gap-4">
+                <a href="/">
+                    <img src="/img/logo.png" alt="Wolf family iptv" class="w-24 lg:w-28">
+                </a>
+            </div>
 
-    <div class="contact-box">
-        <h1>Contact Us</h1>
-        <p>Try our service for free and feel the difference!</p>
+            <ul class="hidden md:flex gap-6 lg:gap-8">
+                <li><a href="/" class="text-sm text-white opacity-100 hover:opacity-100 transition ">Home</a>
+                </li>
+                <li><a href="/channel-list/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Channel
+                        List</a>
+                </li>
+                <li><a href="/subscribe/"
+                        class="text-sm text-white opacity-80 hover:opacity-100 transition">Subscribe</a></li>
+                <li><a href="/how-it-works/"
+                        class="text-sm font-bold text-white opacity-80 hover:opacity-100 transition">How it
+                        Works</a>
+                </li>
+                <li><a href="/technology/"
+                        class="text-sm text-white opacity-80 hover:opacity-100 transition">Technology</a>
+                </li>
+                <li><a href="/contact/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Contact</a>
+                </li>
+            </ul>
 
-        <form>
-            <label>Name</label>
-            <input type="text" placeholder="familytv">
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-white text-2xl">☰</button>
+        </nav>
+    </header>
 
-            <label>Email</label>
-            <input type="email" placeholder="wolffamilytv@gmail.com">
 
-            <label>Message</label>
-            <textarea placeholder="Who can I help ?"></textarea>
+    <!-- CONTACT SECTION -->
+    <section class="py-32 min-h-screen relative flex items-center justify-center">
 
-            <button type="submit">Send Message</button>
-        </form>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-[rgba(5,10,20,0.9)] to-[rgba(120,0,20,0.7)] z-0"></div>
+
+        <div class="container mx-auto z-10 p-20 flex justify-center items-center bg-cover bg-center bg-no-repeat relative rounded-3xl overflow-hidden" style="background-image: url('/img/bg-contact.png')">
+            <!-- Contact Box -->
+            <div class="relative z-[2] w-full max-w-2xl text-center px-4">
+                <h1 class="text-[42px] font-bold mb-2.5">Contact Us</h1>
+                <p class="text-sm mb-7 text-[#ccc]">Try our service for free and feel the difference!</p>
+
+                <form class="text-left">
+                    <label class="text-[13px] block mb-1.5">Name</label>
+                    <input type="text" placeholder="familytv"
+                        class="w-full py-3 px-4 mb-4 rounded-[25px] border border-white/30 bg-white/5 text-white outline-none placeholder:text-gray-400">
+
+                    <label class="text-[13px] block mb-1.5">Email</label>
+                    <input type="email" placeholder="wolffamilytv@gmail.com"
+                        class="w-full py-3 px-4 mb-4 rounded-[25px] border border-white/30 bg-white/5 text-white outline-none placeholder:text-gray-400">
+
+                    <label class="text-[13px] block mb-1.5">Message</label>
+                    <textarea placeholder="Who can I help ?"
+                        class="w-full py-3 px-4 mb-4 rounded-[15px] border border-white/30 bg-white/5 text-white outline-none h-[110px] resize-none placeholder:text-gray-400"></textarea>
+
+                    <button type="submit"
+                        class="w-40 mx-auto block py-3 rounded-[25px] border-none bg-primary text-white cursor-pointer text-sm hover:bg-primary-dark transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#06080f] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-8 lg:px-16 py-16 gap-10">
+        <div>
+            <h3 class="mb-4 text-lg font-bold">WOLF Family TV</h3>
+            <p class="text-[13px] text-[#aaa] mb-2">
+                Leading the streaming revolution since 2018.
+                High-speed global servers with the best quality/price ratio.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="mb-4 text-base font-bold">Navigation</h4>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Home</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Channels</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">How it
+                Works</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Pricing</a>
+        </div>
+
+        <div>
+            <h4 class="mb-4 text-base font-bold">Company</h4>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">About Us</a>
+            <a href="#"
+                class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Affiliates</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Site Map</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Contact</a>
+        </div>
+
+        <div>
+            <h4 class="mb-4 text-base font-bold">Legal</h4>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Privacy
+                Policy</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Terms of
+                Service</a>
+            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Cookie
+                Policy</a>
+        </div>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="text-center py-4 text-xs bg-[#04060b] text-[#777]">
+        © 2026 Wolf Family IPTV. All rights reserved.
     </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-col">
-        <h3>WOLF Family TV</h3>
-        <p>
-            Leading the streaming revolution since 2018.
-            High-speed global servers with the best quality/price ratio.
-        </p>
-    </div>
-
-    <div class="footer-col">
-        <h4>Navigation</h4>
-        <a href="#">Home</a>
-        <a href="#">Channels</a>
-        <a href="#">How it Works</a>
-        <a href="#">Pricing</a>
-    </div>
-
-    <div class="footer-col">
-        <h4>Company</h4>
-        <a href="#">About Us</a>
-        <a href="#">Affiliates</a>
-        <a href="#">Site Map</a>
-        <a href="#">Contact</a>
-    </div>
-
-    <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Cookie Policy</a>
-    </div>
-</footer>
-
-<div class="copyright">
-    © 2024 Wolf Family IPTV. All rights reserved.
-</div>
 
 </body>
+
 </html>

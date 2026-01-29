@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions - Wolf Family IPTV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2d7dff',
+                        'primary-dark': '#1b5fd1',
+                    }
+                }
+            }
+        }
+    </script>
+     <script src="/assets/js/header.js"></script>
+</head>
+
+<body class="text-white" style="background: radial-gradient(circle at top left, #0a1a2a, #2b0710, #050505);">
+    <header class="fixed w-full top-0 z-50 backdrop-blur-md" style="background: rgba(0, 0, 0, 0.1);">
+        <nav class="flex justify-between items-center px-8 lg:px-16 py-6">
+            <div class="flex items-center gap-4">
+                <a href="/">
+                    <img src="/img/logo.png" alt="Wolf family iptv" class="w-24 lg:w-28">
+                </a>
+            </div>
+
+            <ul class="hidden md:flex gap-6 lg:gap-8">
+                <li><a href="/" class="text-sm text-white opacity-100 hover:opacity-100 transition">Home</a>
+                </li>
+                <li><a href="/channel-list/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Channel
+                        List</a>
+                </li>
+                <li><a href="/subscribe/"
+                        class="text-sm font-bold  text-white opacity-80 hover:opacity-100 transition">Subscribe</a></li>
+                <li><a href="/how-it-works/" class="text-sm text-white opacity-80 hover:opacity-100 transition">How it
+                        Works</a>
+                </li>
+                <li><a href="/technology/"
+                        class="text-sm text-white opacity-80 hover:opacity-100 transition">Technology</a>
+                </li>
+                <li><a href="/contact/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-white text-2xl">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="text-center px-5 pt-48 pb-16">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">Subscriptions</h1>
+        <p class="text-gray-300 text-base lg:text-lg">Try our service for free and feel the difference!</p>
+    </section>
+
+    <!-- PRICING CARDS -->
+    <section class="flex justify-center gap-6 lg:gap-9 px-6 lg:px-16 py-12 lg:py-16 flex-wrap">
+
+        <!-- FREE TRIAL CARD -->
+        <div class="relative w-full sm:w-80 p-10 rounded-3xl text-center transition hover:-translate-y-3 cursor-pointer"
+            style="background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(0,0,0,0.6)); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+            <h3 class="text-xl mb-2.5">24H Test</h3>
+            <h2 class="text-5xl font-bold mb-6">Free</h2>
+            <ul class="list-none text-left mb-8 space-y-2.5">
+                <li class="text-gray-300">✔ Full Channel Access</li>
+                <li class="text-gray-300">✔ 4K Quality</li>
+                <li class="text-gray-300">✔ 1 Connection</li>
+                <li class="text-gray-300">✔ Instant Setup</li>
+            </ul>
+            <button class="px-7 py-3 rounded-full bg-[#1e90ff] hover:bg-[#1670cc] text-white text-[15px] transition">
+                Try Now
+            </button>
+        </div>
+
+        <!-- MONTHLY CARD - POPULAR -->
+        <div class="relative w-full sm:w-80 p-10 rounded-3xl text-center transition hover:-translate-y-3 cursor-pointer border-2 border-[#1e90ff]"
+            style="background: linear-gradient(135deg, rgba(30,144,255,0.1), rgba(0,0,0,0.6)); backdrop-filter: blur(10px);">
+            <span
+                class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1e90ff] px-3.5 py-1.5 rounded-full text-[13px] font-semibold">
+                Most popular
+            </span>
+            <h3 class="text-xl mb-2.5 mt-2">Monthly</h3>
+            <h2 class="text-5xl font-bold mb-6">$14.99</h2>
+            <ul class="list-none text-left mb-8 space-y-2.5">
+                <li class="text-gray-300">✔ Full Channel Access</li>
+                <li class="text-gray-300">✔ 4K Quality</li>
+                <li class="text-gray-300">✔ 2 Connections</li>
+                <li class="text-gray-300">✔ 24/7 Support</li>
+            </ul>
+            <button class="px-7 py-3 rounded-full text-white text-[15px] transition"
+                style="background: linear-gradient(135deg, #4a7dff, #6c2fff);">
+                Get Started
+            </button>
+        </div>
+
+        <!-- ANNUAL CARD -->
+        <div class="relative w-full sm:w-80 p-10 rounded-3xl text-center transition hover:-translate-y-3 cursor-pointer"
+            style="background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(0,0,0,0.6)); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+            <h3 class="text-xl mb-2.5">Annual</h3>
+            <h2 class="text-5xl font-bold mb-6">$99.99</h2>
+            <ul class="list-none text-left mb-8 space-y-2.5">
+                <li class="text-gray-300">✔ Full Channel Access</li>
+                <li class="text-gray-300">✔ 8K Support</li>
+                <li class="text-gray-300">✔ 4 Connections</li>
+                <li class="text-gray-300">✔ Premium VPN Included</li>
+            </ul>
+            <button class="px-7 py-3 rounded-full bg-[#1e90ff] hover:bg-[#1670cc] text-white text-[15px] transition">
+                Best Value
+            </button>
+        </div>
+
+    </section>
+
+    <!-- FOOTER - Structure uniformisée -->
+    <footer class="bg-[#050505] text-gray-400 py-16 px-6 lg:px-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 max-w-7xl mx-auto">
+            <div>
+                <img src="../img/logo.png" alt="Logo" class="w-24 mb-3">
+                <p class="text-[13px] leading-relaxed mb-4">
+                    Leading the streaming revolution since 2018.
+                    High-speed global servers with the best quality/price ratio on the market.
+                </p>
+                <div class="flex gap-2.5">
+                    <a href="#"><img src="../img/Facebook.png" alt="Facebook" class="w-8"></a>
+                    <a href="#"><img src="../img/Instagram.png" alt="Instagram" class="w-8"></a>
+                    <a href="#"><img src="../img/Linkedin.png" alt="LinkedIn" class="w-8"></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Navigation</h4>
+                <a href="/" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Home</a>
+                <a href="/channel-list/"
+                    class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Channels</a>
+                <a href="/how-it-works/" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">How
+                    It Works</a>
+                <a href="/subscribe/"
+                    class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Pricing</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Company</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">About Us</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Affiliates</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Site Map</a>
+                <a href="/contact/"
+                    class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Contact</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Legal</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Privacy
+                    Policy</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Terms of
+                    Service</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Cookie Policy</a>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-4 text-center text-xs max-w-7xl mx-auto">
+            <p class="text-gray-500">© 2026 Wolf Family IPTV. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

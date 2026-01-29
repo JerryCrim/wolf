@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel List - Wolf Family IPTV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2d7dff',
+                        'primary-dark': '#1b5fd1',
+                    }
+                }
+            }
+        }
+    </script>
+     <script src="/assets/js/header.js"></script>
+</head>
+
+<body class="bg-black text-white">
+    <header class="fixed w-full top-0 z-50 backdrop-blur-md" style="background: rgba(0, 0, 0, 0.1);">
+        <nav class="flex justify-between items-center px-8 lg:px-16 py-6">
+            <div class="flex items-center gap-4">
+                <a href="/">
+                    <img src="/img/logo.png" alt="Wolf family iptv" class="w-24 lg:w-28">
+                </a>
+            </div>
+
+            <ul class="hidden md:flex gap-6 lg:gap-8">
+                <li><a href="/" class="text-sm text-white opacity-100 hover:opacity-100 transition">Home</a>
+                </li>
+                <li><a href="/channel-list/" class="text-sm font-bold text-white opacity-80 hover:opacity-100 transition">Channel
+                        List</a>
+                </li>
+                <li><a href="/subscribe/"
+                        class="text-sm text-white opacity-80 hover:opacity-100 transition">Subscribe</a></li>
+                <li><a href="/how-it-works/" class="text-sm text-white opacity-80 hover:opacity-100 transition">How it
+                        Works</a>
+                </li>
+                <li><a href="/technology/"
+                        class="text-sm text-white opacity-80 hover:opacity-100 transition">Technology</a>
+                </li>
+                <li><a href="/contact/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-white text-2xl">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="px-8 lg:px-16 pt-48 pb-16 bg-gradient-to-br from-[#0a1a2a] to-black">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">Content Library</h1>
+        <p class="max-w-3xl text-gray-300 text-base lg:text-lg">
+            Enjoy a wide selection of popular American channels, as well as streaming
+            giants like Netflix, Disney+, and Amazon Prime Video.
+        </p>
+    </section>
+
+    <!-- CATEGORIES SLIDER avec Swiper -->
+    <section class="py-12 px-8 lg:px-16 relative"
+        style="background: radial-gradient(circle at top left, #0a1a2a, #050505);">
+        <div class="swiper categoriesSwiper " style="padding: 2rem 1rem;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="h-72 lg:h-80 rounded-2xl flex items-end p-5 font-bold text-lg cursor-pointer transition hover:scale-105"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../img/Rectangle 52.png') center/cover no-repeat;">
+                        Comedy
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-72 lg:h-80 rounded-2xl flex items-end p-5 font-bold text-lg cursor-pointer transition hover:scale-105"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../img/Rectangle 53.png') center/cover no-repeat;">
+                        Adventure
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-72 lg:h-80 rounded-2xl flex items-end p-5 font-bold text-lg cursor-pointer transition hover:scale-105"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../img/Rectangle 54.png') center/cover no-repeat;">
+                        Fantastique
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-72 lg:h-80 rounded-2xl flex items-end p-5 font-bold text-lg cursor-pointer transition hover:scale-105"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../img/Rectangle 55.png') center/cover no-repeat;">
+                        Drama
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-72 lg:h-80 rounded-2xl flex items-end p-5 font-bold text-lg cursor-pointer transition hover:scale-105"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../img/Rectangle 56.png') center/cover no-repeat;">
+                        Série
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-72 lg:h-80 rounded-2xl flex items-end p-5 font-bold text-lg cursor-pointer transition hover:scale-105"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../img/Rectangle 57.png') center/cover no-repeat;">
+                        Action
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next after:text-white !text-white"></div>
+            <div class="swiper-button-prev after:text-white !text-white"></div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="flex flex-col lg:flex-row gap-6 px-8 lg:px-16 py-12"
+        style="background: radial-gradient(circle at top left, #0a1a2a, #050505);">
+        <div class="relative flex-1 flex items-center justify-between p-8 rounded-3xl"
+            style="background: linear-gradient(135deg, #0c2340, #000);">
+            <div class="flex-1 ">
+                <h2 class="text-3xl font-bold mb-2">Films</h2>
+                <p class="text-gray-300">60,000+ Blockbusters & Classics</p>
+            </div>
+
+            <div class="absolute top-8 right-8">
+                <i class="ri-eye-line text-white text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="relative flex-1 flex items-center justify-between p-8 rounded-3xl"
+            style="background: linear-gradient(135deg, #3b0a3d, #000);">
+            <div class="flex-1 ">
+                <h2 class="text-3xl font-bold mb-2">Séries</h2>
+                <p class="text-gray-300">15,000+ Full Seasons & New Releases</p>
+            </div>
+
+            <div class="absolute top-8 right-8">
+                <i class="ri-eye-line text-white text-2xl"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PLATFORMS -->
+    <section class="px-8 lg:px-16 py-12" style="background: radial-gradient(circle at top left, #0a1a2a, #050505);">
+        <h2 class="text-3xl font-bold mb-6">Premium Platforms</h2>
+        <div class="flex flex-wrap gap-5">
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/logo netflix.png" alt="Netflix" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/AppleTV.png" alt="Apple TV" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/prime video.png" alt="Prime Video" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/logo disney.png" alt="Disney+" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/logo marvel.png" alt="Marvel" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/logo crave.png" alt="Crave" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center">
+                <img src="../img/logo DC.png" alt="DC" class="max-w-[80%] max-h-[80%] object-contain">
+            </div>
+        </div>
+    </section>
+
+    <!-- CHANNELS -->
+    <section class="px-8 lg:px-16 py-12" style="background: radial-gradient(circle at top left, #0a1a2a, #050505);">
+        <h2 class="text-3xl font-bold mb-6">Popular Live Channels</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/ABC.png" alt="ABC" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">ABC</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/CBS.png" alt="CBS" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">CBS</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/NBC.png" alt="NBC" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">NBC</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/FOX.png" alt="FOX" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">FOX</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ESPN_wordmark.svg" alt="ESPN"
+                    class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">ESPN</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/HBO.png" alt="HBO" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">HBO</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/TNT.png" alt="TNT" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">TNT</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/AMC.png" alt="AMC" class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">AMC</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/CN.png" alt="Cartoon Network"
+                    class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">Cartoon Network</p>
+            </div>
+            <div
+                class="bg-[#e5e5e5] text-black p-6 rounded-2xl text-center font-bold hover:scale-105 transition cursor-pointer">
+                <img src="../img/Discovery.png" alt="Discovery"
+                    class="max-w-[80px] max-h-[40px] object-contain mx-auto mb-2">
+                <p class="text-sm">Discovery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - Structure uniformisée -->
+    <footer class="bg-black text-gray-400 py-16 px-6 lg:px-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 max-w-7xl mx-auto">
+            <div>
+                <img src="../img/logo.png" alt="Logo" class="w-24 mb-3">
+                <p class="text-[13px] leading-relaxed mb-4">
+                    Leading the streaming revolution since 2018.
+                    High-speed global servers with the best quality/price ratio on the market.
+                </p>
+                <div class="flex gap-2.5">
+                    <a href="#"><img src="../img/Facebook.png" alt="Facebook" class="w-8"></a>
+                    <a href="#"><img src="../img/Instagram.png" alt="Instagram" class="w-8"></a>
+                    <a href="#"><img src="../img/Linkedin.png" alt="LinkedIn" class="w-8"></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Navigation</h4>
+                <a href="/" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Home</a>
+                <a href="/channel-list/"
+                    class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Channels</a>
+                <a href="/how-it-works/" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">How
+                    It Works</a>
+                <a href="/subscribe/"
+                    class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Pricing</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Company</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">About Us</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Affiliates</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Site Map</a>
+                <a href="/contact/"
+                    class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Contact</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Legal</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Privacy
+                    Policy</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Terms of
+                    Service</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Cookie Policy</a>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-4 flex justify-between flex-wrap text-xs max-w-7xl mx-auto">
+            <span>© 2026 Wolf Family IPTV. All rights reserved.</span>
+            <span>Secure Checkout • Instant Delivery</span>
+        </div>
+    </footer>
+
+    <!-- Swiper JS Initialization -->
+    <script>
+        const swiper = new Swiper('.categoriesSwiper', {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 25,
+                },
+                1024: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 30,
+                },
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
