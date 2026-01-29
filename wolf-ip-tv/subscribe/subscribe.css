@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top left, #0a1a2a, #2b0710, #050505);
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.navbar nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+    color: #fff;
+}
+
+/* HERO */
+.pricing-hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.pricing-hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.pricing-hero p {
+    color: #bbb;
+    font-size: 18px;
+}
+
+/* CARDS */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    padding: 40px 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(0,0,0,0.6));
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.card ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: none;
+    background: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #4a7dff, #6c2fff);
+}
+
+/* BADGE */
+.badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e90ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px;
+    background: #050505;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+}
+
+footer a {
+    display: block;
+    margin-top: 8px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer h3, footer h4 {
+    margin-bottom: 12px;
+}
+
+copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pricing-hero h1 {
+        font-size: 34px;
+    }
+}
