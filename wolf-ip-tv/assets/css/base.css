@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --white: #FFFFFF;
     --gradient-1: linear-gradient(90deg, #004981 0%, #2F71E3 100%);
     --gradient-2: linear-gradient(90deg, #750F0F 0%, #DC2727 100%);
 }
+
 body {
     background: #000000;
     position: relative;
     overflow-x: hidden;
-  
+    font-family: 'Inter', sans-serif;
 }
 
 header {
-    transition : all .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
-
 .btn-primary {
 
     background: var(--gradient-1);
