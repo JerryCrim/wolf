@@ -24,7 +24,7 @@
     <script src="/assets/js/header.js"></script>
 </head>
 
-<body class="bg-[#0b0f16] text-white m-0 p-0 box-border font-sans">
+<body class=" text-white m-0 p-0 box-border font-sans">
 
     <!-- HEADER -->
     <header class="fixed w-full top-0 z-50 backdrop-blur-md" style="background: rgba(0, 0, 0, 0.1);">
@@ -63,10 +63,9 @@
     <!-- CONTACT SECTION -->
     <section class="py-32 min-h-screen relative flex items-center justify-center">
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-br from-[rgba(5,10,20,0.9)] to-[rgba(120,0,20,0.7)] z-0"></div>
 
-        <div class="container mx-auto z-10 p-20 flex justify-center items-center bg-cover bg-center bg-no-repeat relative rounded-3xl overflow-hidden" style="background-image: url('/img/bg-contact.png')">
+        <div class="container mx-auto z-10 p-20 flex justify-center items-center bg-cover bg-center bg-no-repeat relative rounded-3xl overflow-hidden"
+            style="background-image: url('/img/bg-contact.png')">
             <!-- Contact Box -->
             <div class="relative z-[2] w-full max-w-2xl text-center px-4">
                 <h1 class="text-[42px] font-bold mb-2.5">Contact Us</h1>
@@ -95,46 +94,55 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#06080f] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-8 lg:px-16 py-16 gap-10">
-        <div>
-            <h3 class="mb-4 text-lg font-bold">WOLF Family TV</h3>
-            <p class="text-[13px] text-[#aaa] mb-2">
-                Leading the streaming revolution since 2018.
-                High-speed global servers with the best quality/price ratio.
-            </p>
+    <footer class=" text-gray-400 py-16 px-6 lg:px-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 max-w-7xl mx-auto">
+            <div>
+                <img src="/img/logo.png" alt="Logo" class="w-24 mb-3">
+                <p class="text-[13px] leading-relaxed mb-4">
+                    Leading the streaming revolution since 2018.
+                    High-speed global servers with the best quality/price ratio on the market.
+                </p>
+                <div class="flex gap-2.5">
+                    <a href="#"><img src="img/Facebook.png" alt="Facebook" class="w-8"></a>
+                    <a href="#"><img src="img/Instagram.png" alt="Instagram" class="w-8"></a>
+                    <a href="#"><img src="img/Linkedin.png" alt="LinkedIn" class="w-8"></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Navigation</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Home</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Channels</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">How It Works</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Pricing</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Company</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">About Us</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Affiliates</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Site Map</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Contact</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-2.5 text-sm font-bold">Legal</h4>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Privacy
+                    Policy</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Terms of
+                    Service</a>
+                <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Cookie Policy</a>
+            </div>
         </div>
 
-        <div>
-            <h4 class="mb-4 text-base font-bold">Navigation</h4>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Home</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Channels</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">How it
-                Works</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Pricing</a>
-        </div>
-
-        <div>
-            <h4 class="mb-4 text-base font-bold">Company</h4>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">About Us</a>
-            <a href="#"
-                class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Affiliates</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Site Map</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Contact</a>
-        </div>
-
-        <div>
-            <h4 class="mb-4 text-base font-bold">Legal</h4>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Privacy
-                Policy</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Terms of
-                Service</a>
-            <a href="#" class="text-[13px] text-[#aaa] no-underline block mb-2 hover:text-white transition">Cookie
-                Policy</a>
+        <div class="border-t border-gray-800 pt-4 flex justify-between flex-wrap text-xs max-w-7xl mx-auto">
+            <span>© 2026 Wolf Family IPTV. All rights reserved.</span>
+            <span>Secure Checkout • Instant Delivery</span>
         </div>
     </footer>
 
     <!-- COPYRIGHT -->
-    <div class="text-center py-4 text-xs bg-[#04060b] text-[#777]">
+    <div class="text-center py-4 text-xs text-[#777]">
         © 2026 Wolf Family IPTV. All rights reserved.
     </div>
 
