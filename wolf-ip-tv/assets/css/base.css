@@ -1,0 +1,148 @@
+:root {
+    --white: #FFFFFF;
+    --gradient-1: linear-gradient(90deg, #004981 0%, #2F71E3 100%);
+    --gradient-2: linear-gradient(90deg, #750F0F 0%, #DC2727 100%);
+}
+
+
+.btn-primary {
+
+    background: var(--gradient-1);
+    border-radius: 24px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.btn-secondary {
+    background: var(--gradient-2);
+    border-radius: 24px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+}
+
+.btn-outline {
+    background: inherit;
+    border-radius: 24px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background: var(--white);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+
+
+.elipse-1 {
+
+    position: absolute;
+    width: 672px;
+    height: 672px;
+    left: 156px;
+    top: 191px;
+
+    background: #D90713;
+    mix-blend-mode: lighten;
+    opacity: 0.39;
+    filter: blur(290.35px);
+
+}
+
+.elipse-2 {
+    position: absolute;
+    width: 672px;
+    height: 672px;
+    left: 880px;
+    top: 0px;
+
+    background: #025D87;
+    mix-blend-mode: plus-lighter;
+    opacity: 0.39;
+    filter: blur(290.35px);
+
+}
+
+.elipse-3 {
+    position: absolute;
+    width: 672px;
+    height: 672px;
+    left: 0px;
+    top: 52px;
+
+    background: #025D87;
+    opacity: 0.39;
+    filter: blur(290.35px);
+    transform: rotate(-138.82deg);
+
+}
+
+.elipse-4 {
+    position: absolute;
+    width: 629.94px;
+    height: 616.47px;
+    left: 623.68px;
+    top: 2066.26px;
+
+    background: #D90713;
+    opacity: 0.39;
+    filter: blur(290.35px);
+    transform: matrix(-0.8, -0.6, 0.72, -0.7, 0, 0);
+
+}
+
+.elipse-5 {
+
+    position: absolute;
+    width: 600.35px;
+    height: 664.01px;
+    left: -3px;
+    top: 2747.52px;
+
+    background: #D90713;
+    opacity: 0.39;
+    filter: blur(290.35px);
+    transform: matrix(0.34, 0.94, -0.97, 0.25, 0, 0);
+
+}
+
+.elipse-6 {
+
+    position: absolute;
+    width: 579.62px;
+    height: 664.01px;
+    left: 390.28px;
+    top: 3288.29px;
+
+    background: #025D87;
+    opacity: 0.39;
+    filter: blur(290.35px);
+    transform: matrix(0.34, 0.94, -0.97, 0.25, 0, 0);
+
+}
+
+.elipse-7 {
+
+    position: absolute;
+    width: 579.62px;
+    height: 664.01px;
+    left: 16px;
+    top: 3788.04px;
+
+    background: #D90713;
+    opacity: 0.39;
+    filter: blur(290.35px);
+    transform: matrix(0.34, 0.94, -0.97, 0.25, 0, 0);
+
+}
