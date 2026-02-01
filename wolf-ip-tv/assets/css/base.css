@@ -4,6 +4,10 @@
     --white: #FFFFFF;
     --gradient-1: linear-gradient(90deg, #004981 0%, #2F71E3 100%);
     --gradient-2: linear-gradient(90deg, #750F0F 0%, #DC2727 100%);
+    --card-gradient :linear-gradient(107.36deg, rgba(252, 252, 252, 0.14) 9.13%, rgba(150, 150, 150, 0.14) 100%);
+/* box-shadow: 0px 4px 32.8px rgba(0, 0, 0, 0.25);
+border-radius: 19px; */
+
 }
 
 body {
