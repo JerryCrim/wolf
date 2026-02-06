@@ -5,6 +5,10 @@
 <title>Politique de confidentialité – Wolffot Family TV</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/js/header.js"></script>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -117,81 +121,36 @@ nav a.active{
     margin-top:6px;
 }
 
-/* ================= FOOTER ================= */
-footer{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:50px 40px 30px;
-}
-
-.footer-grid{
-    max-width:1100px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr 1fr;
-    gap:30px;
-}
-
-.footer-brand{
-    font-size:13px;
-    line-height:1.6;
-    opacity:.85;
-}
-
-.footer-title{
-    font-weight:600;
-    margin-bottom:12px;
-}
-
-.footer-links a{
-    display:block;
-    font-size:13px;
-    opacity:.8;
-    margin-bottom:8px;
-}
-
-.footer-bottom{
-    max-width:1100px;
-    margin:30px auto 0;
-    display:flex;
-    justify-content:space-between;
-    font-size:12px;
-    opacity:.6;
-}
-
-@media(max-width:900px){
-    header{flex-direction:column;gap:15px}
-    .footer-grid{grid-template-columns:1fr 1fr}
-}
-
-@media(max-width:600px){
-    .hero h1{font-size:30px}
-    .footer-grid{grid-template-columns:1fr}
-}
 </style>
 </head>
 <body>
 
-<header>
-    <div class="brand">
-        WOLF
-        <div>
-            Family TV<br><span>Streaming Platform</span>
-        </div>
-    </div>
+<header class="fixed w-full top-0 z-50 backdrop-blur-md" style="background: rgba(0, 0, 0, 0.1);">
+    <nav class="w-full flex justify-between items-center px-8 lg:px-16 py-6">
+      <div class="flex items-center gap-4">
+        <a href="/">
+          <img src="/img/logo.png" alt="Wolf family iptv" class="w-24 lg:w-28">
+        </a>
+      </div>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Channel List</a></li>
-            <li><a href="#">Subscribe</a></li>
-            <li><a href="#" class="active">Who to work</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+      <ul class="hidden md:flex gap-6 lg:gap-8">
+        <li><a href="/" class="text-sm text-white opacity-100 hover:opacity-100 transition font-bold">Home</a></li>
+        <li><a href="/channel-list/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Channel List</a>
+        </li>
+        <li><a href="/subscribe/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Subscribe</a></li>
+        <li><a href="/how-it-works/" class="text-sm text-white opacity-80 hover:opacity-100 transition">How it Works</a>
+        </li>
+        <li><a href="/technology/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Technology</a>
+        </li>
+        <li><a href="/contact/" class="text-sm text-white opacity-80 hover:opacity-100 transition">Contact</a></li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-white text-2xl">☰</button>
     </nav>
-</header>
+  </header>
 
-<main class="container">
+<main class="container mx-auto px-4 lg:px-8 min-h-screen !mt-20 py-32 text-white">
 
     <section class="hero">
         <h1>Politique de confidentialité</h1>
@@ -310,52 +269,50 @@ footer{
 
 </main>
 
-<footer>
-
-    <div class="footer-grid">
-
-        <div class="footer-brand">
-            <strong>WOLF Family TV</strong><br>
-            Leading the streaming revolution since 2018. High‑speed global servers with the best quality/price ratio on the market.
+  <footer class=" text-gray-400 px-6 lg:px-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 container mx-auto border-t border-gray-800 py-16 ">
+      <div>
+        <img src="/img/logo.png" alt="Logo" class="w-24 mb-3">
+        <p class="text-white text-[13px] leading-relaxed mb-4">
+          Leading the streaming revolution since 2018.
+          High-speed global servers with the best quality/price ratio on the market.
+        </p>
+        <div class="flex gap-2.5">
+          <a href="#"><img src="/img/Facebook.png" alt="Facebook" class="w-8"></a>
+          <a href="#"><img src="/img/Instagram.png" alt="Instagram" class="w-8"></a>
+          <a href="#"><img src="/img/Linkedin.png" alt="LinkedIn" class="w-8"></a>
         </div>
+      </div>
 
-        <div>
-            <div class="footer-title">Navigation</div>
-            <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Channels</a>
-                <a href="#">How it Works</a>
-                <a href="#">Pricing</a>
-            </div>
-        </div>
+      <div>
+        <h4 class="text-white mb-2.5 text-sm font-bold">Navigation</h4>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Home</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Channels</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">How It Works</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Pricing</a>
+      </div>
 
-        <div>
-            <div class="footer-title">Company</div>
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Affiliates</a>
-                <a href="#">Site Map</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
+      <div>
+        <h4 class="text-white mb-2.5 text-sm font-bold">Company</h4>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">About Us</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Affiliates</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Site Map</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Contact</a>
+      </div>
 
-        <div>
-            <div class="footer-title">Legal</div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-            </div>
-        </div>
-
+      <div>
+        <h4 class="text-white mb-2.5 text-sm font-bold">Legal</h4>
+        <a href="/politique-de-confidentialite" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Terms of Service</a>
+        <a href="#" class="block text-gray-400 text-[13px] mb-1.5 hover:text-white transition">Cookie Policy</a>
+      </div>
     </div>
 
-    <div class="footer-bottom">
-        <div>© 2024 Wolff Family IPTV. All rights reserved.</div>
-        <div>Secure Checkout · Instant Delivery</div>
+    <div class="border-t border-gray-800 pt-4 flex justify-between flex-wrap text-xs container mx-auto">
+      <span>© 2026 Wolf Family IPTV. All rights reserved.</span>
+      <span>Secure Checkout • Instant Delivery</span>
     </div>
-
-</footer>
+  </footer>
 
 </body>
 </html>
